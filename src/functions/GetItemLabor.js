@@ -1,8 +1,8 @@
 const { app,input } = require('@azure/functions');
 
 const cosmosInput = input.cosmosDB({
-    databaseName: 'DemoDatabase',
-    containerName: 'Items',
+    databaseName: 'FallbspDB',
+    containerName: 'FallbspContainer',
     connection: 'CosmosDB',
     sqlQuery: "select * from c"
 });
